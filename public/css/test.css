@@ -1,7 +1,14 @@
+@charset "UTF-8";
 body {
-  background-color: #41a191;
+  font-family: Impact, "微軟正黑體";
+  color: #80bee2;
 }
 
-h1 {
-  border: 1px solid #6b0a0a;
+.btn-primary {
+  background-color: #80bee2;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  text-decoration: none;
+  letter-spacing: 3px;
 }

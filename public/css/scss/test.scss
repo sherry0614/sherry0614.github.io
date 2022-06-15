@@ -1,6 +1,16 @@
+//設定變數$開頭
+$primary-color:#80bee2;
+
+
 body{
-    background-color: rgb(65, 161, 145);
+    font-family: Impact ,"微軟正黑體";
+    color: $primary-color;
 }
-h1{
-    border: 1px solid rgb(107, 10, 10);
+.btn-primary{
+    background-color: $primary-color;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    text-decoration: none;
+    letter-spacing: 3px;
 }
