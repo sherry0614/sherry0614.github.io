@@ -1,3 +1,7 @@
-boby {
+body {
   background-color: #41a191;
+}
+
+h1 {
+  border: 1px solid #6b0a0a;
 }
