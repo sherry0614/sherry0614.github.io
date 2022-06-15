@@ -19,7 +19,8 @@ body{
     // background-color: rgb(125, 132, 196);
 }
 // =========================
-// ============頁首=========
+//          頁首 
+// =========================
 header{
     background-color: #052627;
 }
@@ -44,30 +45,82 @@ header>.container>nav>ul>li>a{
     letter-spacing: 2px;
 }
 // =========================
-// =========內容區塊=========
-// 圖片樣式
+//         內容區塊 
+// =========================
+// ---------圖片樣式----------
+
 .img-fluid{
     width: 100%;
 }
+// 圓角樣式
 .img-rounded{
     border-radius: 8px;
 }
+// 圓形樣式
 .img-circle{
     border-radius: 100%;
 }
-// 文字樣式
+//----------文字樣式----------
 .text-center{
     text-align: center;
-}// 區塊樣式
+}
+//---------- 區塊樣式----------
 .row{
     display: flex;
     flex-wrap: wrap;// 換行
 }
-
+// 三欄
 .col-4{
     width: calc(100% /3 - 30PX);
     margin: 0PX 15PX 40PX 15PX;
-    //上右下左  
-   
+    //上右下左     
+}
+// 四欄
+.col-3{
+    width: calc(100% / 4 - 30px);
+    margin: 15px;
+}
+// 兩欄
+.col-6{
+    width: calc(100% /2 - 30px);
+    margin: 30px;
+}
+.title a{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.date{
+    color: $primaty-color;
 }
 
+
+h2{
+    font-size: 2em;
+    margin: 60px auto 30px auto;
+}
+// ==============
+// 頁尾
+// ==============
+footer{
+    background-color: #052627;
+    padding: 40px 0 40px 0;
+}
+dt{
+    color: #9dd3e0;
+    font-size: 1.2em;
+
+    margin-bottom: 4px;
+}
+dd{
+    margin-bottom: 4px;
+
+}
+dd>a{
+    color: #a1afbe;
+}
+
+footer p{
+    color: $primaty-color; 
+    font-size: smaller;
+}

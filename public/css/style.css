@@ -73,3 +73,52 @@ header > .container > nav > ul > li > a {
   width: calc(100% /3 - 30PX);
   margin: 0PX 15PX 40PX 15PX;
 }
+
+.col-3 {
+  width: calc(100% / 4 - 30px);
+  margin: 15px;
+}
+
+.col-6 {
+  width: calc(100% /2 - 30px);
+  margin: 30px;
+}
+
+.title a {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.date {
+  color: #a1afbe;
+}
+
+h2 {
+  font-size: 2em;
+  margin: 60px auto 30px auto;
+}
+
+footer {
+  background-color: #052627;
+  padding: 40px 0 40px 0;
+}
+
+dt {
+  color: #9dd3e0;
+  font-size: 1.2em;
+  margin-bottom: 4px;
+}
+
+dd {
+  margin-bottom: 4px;
+}
+
+dd > a {
+  color: #a1afbe;
+}
+
+footer p {
+  color: #a1afbe;
+  font-size: smaller;
+}
