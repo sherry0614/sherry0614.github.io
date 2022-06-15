@@ -1,4 +1,4 @@
-$primaty-color:ABB7C4;
+$primaty-color:#a1afbe;
 *{
     margin: 0;
     padding: 0;
@@ -18,9 +18,10 @@ body{
     max-width: 1140px;
     // background-color: rgb(125, 132, 196);
 }
-// =========頁首=========
+// =========================
+// ============頁首=========
 header{
-    background-color: rgb(15, 21, 22);
+    background-color: #052627;
 }
 header>.container>h1{
     padding-top: 20px;
@@ -42,4 +43,15 @@ header>.container>nav>ul>li>a{
     font-size: 1.2em;
     letter-spacing: 2px;
 }
-// =========內容=========
+// =========================
+// =========內容區塊=========
+.img-fluid{
+    width: 100%;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;// 換行
+}
+.col-4{
+    width: 33.33333333%;
+}

@@ -22,7 +22,7 @@ body {
 }
 
 header {
-  background-color: #0f1516;
+  background-color: #052627;
 }
 
 header > .container > h1 {
@@ -30,7 +30,7 @@ header > .container > h1 {
 }
 
 header > .container > h1 > a {
-  color: ABB7C4;
+  color: #a1afbe;
 }
 
 header > .container > nav > ul {
@@ -43,7 +43,20 @@ header > .container > nav > ul > li {
 
 header > .container > nav > ul > li > a {
   line-height: 60px;
-  color: ABB7C4;
+  color: #a1afbe;
   font-size: 1.2em;
   letter-spacing: 2px;
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-4 {
+  width: 33.33333333%;
 }
