@@ -22,7 +22,7 @@ body {
 }
 
 header {
-  background-color: #bedce5;
+  background-color: #0f1516;
 }
 
 header > .container > h1 {
@@ -30,7 +30,7 @@ header > .container > h1 {
 }
 
 header > .container > h1 > a {
-  color: c2eabd;
+  color: ABB7C4;
 }
 
 header > .container > nav > ul {
@@ -43,7 +43,7 @@ header > .container > nav > ul > li {
 
 header > .container > nav > ul > li > a {
   line-height: 60px;
-  color: c2eabd;
+  color: ABB7C4;
   font-size: 1.2em;
   letter-spacing: 2px;
 }
