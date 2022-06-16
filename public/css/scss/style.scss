@@ -92,6 +92,11 @@ header>.container>nav>ul>li>a{
     width: calc(100% / 1.333333 - 30px);
     margin: 15px;
 }
+
+.col-12{
+    width: calc(100% - 30px);
+    margin: 15px;
+}
 .title a{
     color: black;
     font-size: 1.5rem;
@@ -136,7 +141,7 @@ footer p{
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 100%;
+    // width: 100%;
 }
 .w-20{
 width: 20%;
@@ -157,4 +162,7 @@ width: 20%;
 .btn-primary:hover{
     background-color: #052627;
     color: #9dd3e0;
+}
+.title-2{color: #052627;
+    font-weight: 700;
 }
