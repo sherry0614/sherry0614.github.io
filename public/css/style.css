@@ -69,19 +69,24 @@ header > .container > nav > ul > li > a {
   flex-wrap: wrap;
 }
 
-.col-4 {
-  width: calc(100% /3 - 30PX);
-  margin: 0PX 15PX 40PX 15PX;
-}
-
 .col-3 {
   width: calc(100% / 4 - 30px);
   margin: 15px;
 }
 
+.col-4 {
+  width: calc(100% / 3 - 30PX);
+  margin: 0PX 15PX 40PX 15PX;
+}
+
 .col-6 {
-  width: calc(100% /2 - 30px);
-  margin: 30px;
+  width: calc(100% / 2 - 30px);
+  margin: 15px;
+}
+
+.col-9 {
+  width: calc(100% / 1.333333 - 30px);
+  margin: 15px;
 }
 
 .title a {
@@ -121,4 +126,34 @@ dd > a {
 footer p {
   color: #a1afbe;
   font-size: smaller;
+}
+
+.breadcrumb {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.w-20 {
+  width: 20%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.btn-primary {
+  background-color: #a3c3f5;
+  padding: 15px;
+  color: #052627;
+  display: block;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  background-color: #052627;
+  color: #9dd3e0;
 }

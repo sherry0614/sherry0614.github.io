@@ -18,6 +18,7 @@ body{
     max-width: 1140px;
     // background-color: rgb(125, 132, 196);
 }
+
 // =========================
 //          頁首 
 // =========================
@@ -44,6 +45,7 @@ header>.container>nav>ul>li>a{
     font-size: 1.2em;
     letter-spacing: 2px;
 }
+
 // =========================
 //         內容區塊 
 // =========================
@@ -69,21 +71,26 @@ header>.container>nav>ul>li>a{
     display: flex;
     flex-wrap: wrap;// 換行
 }
-// 三欄
-.col-4{
-    width: calc(100% /3 - 30PX);
-    margin: 0PX 15PX 40PX 15PX;
-    //上右下左     
-}
+
 // 四欄
 .col-3{
     width: calc(100% / 4 - 30px);
     margin: 15px;
+}// 三欄
+.col-4{
+    width: calc(100% / 3 - 30PX);
+    margin: 0PX 15PX 40PX 15PX;
+    //上右下左     
 }
 // 兩欄
 .col-6{
-    width: calc(100% /2 - 30px);
-    margin: 30px;
+    width: calc(100% / 2 - 30px);
+    margin: 15px;
+}
+
+.col-9{
+    width: calc(100% / 1.333333 - 30px);
+    margin: 15px;
 }
 .title a{
     color: black;
@@ -123,4 +130,31 @@ dd>a{
 footer p{
     color: $primaty-color; 
     font-size: smaller;
+}
+
+.breadcrumb{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.w-20{
+width: 20%;
+
+}
+.w-80{
+    width: 80%;
+}
+.btn-primary{
+    background-color: rgb(163, 195, 245);
+    padding: 15px;
+    color: #052627;
+    display: block;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    text-align: center;
+}
+.btn-primary:hover{
+    background-color: #052627;
+    color: #9dd3e0;
 }
