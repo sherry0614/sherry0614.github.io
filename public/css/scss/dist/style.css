@@ -133,9 +133,9 @@ footer {
 }
 
 dt {
-  color: #548f9e;
+  color: #9dd3e0;
   font-size: 1.2em;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 dd {
@@ -181,7 +181,7 @@ footer p {
 
 .btn-primary:hover {
   background-color: #052627;
-  color: #a1afbe;
+  color: #9dd3e0;
 }
 
 .text-primary {
@@ -199,13 +199,13 @@ footer p {
   border-radius: 8px;
 }
 
-.img-overlay img {
+.img-wrap img {
   vertical-align: top;
   transition: all 0.5s;
 }
 
-.img-overlay img:hover {
-  transform: scale(1.2);
+.img-wrap img:hover {
+  transform: scale(1.5);
 }
 
 .icon-new {
