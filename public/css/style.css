@@ -218,3 +218,43 @@ footer p {
   top: -25px;
   left: -25px;
 }
+
+@media (max-width: 767px) {
+  h1 {
+    background-color: #a73939;
+    float: left;
+  }
+
+  .icon-menu {
+    float: right;
+    width: 15%;
+    display: block;
+    background-color: #9c5656;
+    color: #a1afbe;
+    line-height: 60px;
+    text-align: center;
+  }
+
+  header > .container > nav {
+    width: 100%;
+    float: left;
+  }
+
+  header > .container > nav > ul {
+    display: block;
+  }
+
+  header > .container > nav > ul > li {
+    text-align: center;
+    width: 100%;
+  }
+
+  .overflow-hidden {
+    overflow: hidden;
+  }
+}
+@media (min-width: 768px) {
+  .icon-menu {
+    display: none;
+  }
+}

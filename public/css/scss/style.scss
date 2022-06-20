@@ -176,6 +176,7 @@ footer p {
     color: $primaty-color;
     font-size: smaller;
 }
+
 // design-list==================
 .breadcrumb {
 
@@ -192,9 +193,11 @@ footer p {
 .w-20 {
     width: 20%;
 }
+
 .w-80 {
     width: 80%;
 }
+
 // button=============
 .btn-primary {
     background-color: rgb(163, 195, 245);
@@ -203,7 +206,7 @@ footer p {
     display: block;
     margin-bottom: 5px;
     border-radius: 3px;
-    text-align: center;   
+    text-align: center;
 }
 
 .btn-primary:hover {
@@ -216,6 +219,7 @@ footer p {
 .text-primary {
     color: #052627;
 }
+
 // image==============
 .img-wrap {
     display: block;
@@ -237,6 +241,7 @@ footer p {
 .img-overlay img:hover {
     transform: scale(1.2);
 }
+
 // icon=============
 .icon-new {
     position: absolute;
@@ -246,9 +251,59 @@ footer p {
     border-radius: 100%;
     background-color: rgb(215, 129, 148);
     top: -25px;
-    left: -25px;    
+    left: -25px;
     // 下方正中
     // bottom: -25px;
     // left:50%;
     // margin-left: -25px;
 }
+
+
+// 小於767執行 start
+@media(max-width:767px) {
+    h1 {
+        // width: 85%;
+        background-color: rgb(167, 57, 57);
+        float: left;
+    }
+
+    // icon-menu
+
+    .icon-menu {
+        float: right;
+        width: 15%;
+        display: block;
+        background-color: rgb(156, 86, 86);
+        color: #a1afbe;
+        line-height: 60px;
+        text-align: center;
+    }
+
+    header>.container>nav {
+        width: 100%;
+        float: left;
+    }
+
+    header>.container>nav>ul {
+        display: block;
+    }
+
+    header>.container>nav>ul>li {
+        text-align: center;
+        width: 100%;
+    }
+
+    .overflow-hidden {
+        overflow: hidden;
+    }
+}
+
+// max-width 小於767執行 end
+// 超過768執行 start
+@media(min-width:768px) {
+    .icon-menu {
+        display: none;
+    }
+}
+
+// 超過768執行 end
