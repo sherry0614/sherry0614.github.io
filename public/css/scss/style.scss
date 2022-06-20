@@ -114,7 +114,7 @@ header>.container>nav>ul>li>a {
 //     }
 // }
 @for $i from 1 through 12 {
-    .col-#{$i}{
+    .col-#{$i} {
         --num: calc(12 / #{$i});
         width: calc(100% / var(--num) - 30px);
         margin: 0px 15px 40px 15px;
@@ -122,24 +122,32 @@ header>.container>nav>ul>li>a {
 }
 
 @media (min-width:768px) {
+    .order-md-1 {
+        order: -1;
+    }
+}
+
+@media (min-width:768px) {
     @for $i from 1 through 12 {
-        .col-md-#{$i}{
+        .col-md-#{$i} {
             --num: calc(12 / #{$i});
             width: calc(100% / var(--num) - 30px);
             margin: 0px 15px 40px 15px;
         }
     }
 }
-@media(min-width:1200px) {
-        @for $i from 1 through 12 {
-            .col-lg-#{$i}{
-                --num: calc(12 / #{$i});
-                width: calc(100% / var(--num) - 30px);
-                margin: 0px 15px 40px 15px;
-            }
 
+@media(min-width:1200px) {
+    @for $i from 1 through 12 {
+        .col-lg-#{$i} {
+            --num: calc(12 / #{$i});
+            width: calc(100% / var(--num) - 30px);
+            margin: 0px 15px 40px 15px;
         }
+
     }
+}
+
 // // 三欄
 // .col-4 {
 //     width: calc(100% / 3 - 30PX);
@@ -365,3 +373,4 @@ footer p {
         margin-bottom: $var * 1em;
     }
 }
+

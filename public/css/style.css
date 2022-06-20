@@ -155,6 +155,11 @@ header > .container > nav > ul > li > a {
 }
 
 @media (min-width: 768px) {
+  .order-md-1 {
+    order: -1;
+  }
+}
+@media (min-width: 768px) {
   .col-md-1 {
     --num: calc(12 / 1);
     width: calc(100% / var(--num) - 30px);
