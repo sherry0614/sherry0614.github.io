@@ -105,33 +105,91 @@ header>.container>nav>ul>li>a {
     width: calc(100% / 4 - 30px);
     margin: 15px;
 }
-
 // 三欄
 .col-4 {
     width: calc(100% / 3 - 30PX);
     margin: 0PX 15PX 40PX 15PX;
     //上右下左     
 }
-
 // 兩欄
 .col-6 {
     width: calc(100% / 2 - 30px);
     margin: 15px;
 }
-
 .col-8 {
     width: calc(100% / 1.5 - 30px);
     margin: 0px 15px 40px 15px;
 }
-
 .col-9 {
     width: calc(100% / 1.333333 - 30px);
     margin: 15px;
 }
-
 .col-12 {
     width: calc(100% - 30px);
     margin: 15px;
+}
+@media(min-width:768px){
+    // 四欄
+.col-md-3 {
+    width: calc(100% / 4 - 30px);
+    margin: 15px;
+}
+// 三欄
+.col-md-4 {
+    width: calc(100% / 3 - 30PX);
+    margin: 0PX 15PX 40PX 15PX;
+    //上右下左     
+}
+// 兩欄
+.col-md-6 {
+    width: calc(100% / 2 - 30px);
+    margin: 15px;
+}
+.col-md-8 {
+    width: calc(100% / 1.5 - 30px);
+    margin: 0px 15px 40px 15px;
+}
+.col-md-9 {
+    width: calc(100% / 1.333333 - 30px);
+    margin: 15px;
+}
+.col-md-12 {
+    width: calc(100% - 30px);
+    margin: 15px;
+}
+
+}
+
+@media(min-width:1200px){
+    // 四欄
+.col-lg-3 {
+    width: calc(100% / 4 - 30px);
+    margin: 15px;
+}
+// 三欄
+.col-lg-4 {
+    width: calc(100% / 3 - 30PX);
+    margin: 0PX 15PX 40PX 15PX;
+    //上右下左     
+}
+// 兩欄
+.col-lg-6 {
+    width: calc(100% / 2 - 30px);
+    margin: 15px;
+}
+.col-lg-8 {
+    width: calc(100% / 1.5 - 30px);
+    margin: 0px 15px 40px 15px;
+}
+.col-lg-9 {
+    width: calc(100% / 1.333333 - 30px);
+    margin: 15px;
+}
+.col-lg-12 {
+    width: calc(100% - 30px);
+    margin: 15px;
+}
+
 }
 
 .title a {
@@ -263,7 +321,6 @@ footer p {
 @media(max-width:767px) {
     h1 {
         // width: 85%;
-        background-color: rgb(167, 57, 57);
         float: left;
     }
 
@@ -273,7 +330,6 @@ footer p {
         float: right;
         width: 15%;
         display: block;
-        background-color: rgb(156, 86, 86);
         color: #a1afbe;
         line-height: 60px;
         text-align: center;
@@ -282,6 +338,12 @@ footer p {
     header>.container>nav {
         width: 100%;
         float: left;
+        display: none;
+    }
+
+    // .active
+    header>.container>nav.active{
+        display: block;
     }
 
     header>.container>nav>ul {
@@ -291,6 +353,9 @@ footer p {
     header>.container>nav>ul>li {
         text-align: center;
         width: 100%;
+    }
+    header>.container>nav>ul>li>a {
+       display: block;
     }
 
     .overflow-hidden {
