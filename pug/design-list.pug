@@ -9,8 +9,9 @@ html(lang='zh-Hant')
   body
     // header start
     // header>.container>h1>a[href="index.html"]{Yu ling's Portfolio}+nav>ul>li*4>a[href="#"]{文字}
-    header
+    header.overflow-hidden 
       .container
+        a.icon-menu(href="#") menu 
         h1
           a(href='index.html') Yu ling's Portfolio
         nav
@@ -32,7 +33,7 @@ html(lang='zh-Hant')
             a(href='index.html') 首頁
           | &nbsp;>&nbsp;
           li 平面作品
-        aside.col-3
+        aside.col-12.col-md-3.col-lg-2
           // ul>li*4>a.btn-primary{分類$$}
           ul
             li
@@ -43,39 +44,39 @@ html(lang='zh-Hant')
               a.btn-primary(href='') 包裝設計
             li
               a.btn-primary(href='') 插畫設計
-        main.col-9
+        main.col-12.col-md-9.col-lg-10
           .row
             // work start
-            .col-4.text-center
+            .col-12.col-md-4.text-center
               a.img-wrap(href='#')
                 .img-overlay
                   img.img-fluid.img-rounded(src='https://picsum.photos/300/300', alt='')
                 span.icon-new NEW
               a.text-primary(href='') 作品標題1
             // work end
-            .col-4.text-center
+            .col-12.col-md-4.text-center
               a.img-wrap(href='#')
                 .img-overlay
                   img.img-fluid.img-rounded(src='https://picsum.photos/300/300', alt='')
                 span.icon-new NEW
               a.text-primary(href='') 作品標題2
-            .col-4.text-center
+            .col-12.col-md-4.text-center
               a.img-wrap(href='#')
                 .img-overlay
                   img.img-fluid.img-rounded(src='https://picsum.photos/300/300', alt='')
                 span.icon-new NEW
               a.text-primary(href='') 作品標題3
-            .col-4.text-center
+            .col-12.col-md-4.text-center
               a.img-wrap(href='#')
                 .img-overlay
                   img.img-fluid.img-rounded(src='https://picsum.photos/300/300', alt='')
               a.text-primary(href='') 作品標題4
-            .col-4.text-center
+            .col-12.col-md-4.text-center
               a.img-wrap(href='#')
                 .img-overlay
                   img.img-fluid.img-rounded(src='https://picsum.photos/300/300', alt='')
               a.text-primary(href='') 作品標題5
-            .col-4.text-center
+            .col-12.col-md-4.text-center
               a.img-warp(href='#')
                 .img-overlay
                   img.img-fluid.img-rounded(src='https://picsum.photos/300/300', alt='')
