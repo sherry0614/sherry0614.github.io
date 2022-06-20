@@ -100,97 +100,74 @@ header>.container>nav>ul>li>a {
     flex-wrap: wrap; // 換行
 }
 
-// 四欄
-.col-3 {
-    width: calc(100% / 4 - 30px);
-    margin: 15px;
-}
-// 三欄
-.col-4 {
-    width: calc(100% / 3 - 30PX);
-    margin: 0PX 15PX 40PX 15PX;
-    //上右下左     
-}
-// 兩欄
-.col-6 {
-    width: calc(100% / 2 - 30px);
-    margin: 15px;
-}
-.col-8 {
-    width: calc(100% / 1.5 - 30px);
-    margin: 0px 15px 40px 15px;
-}
-.col-9 {
-    width: calc(100% / 1.333333 - 30px);
-    margin: 15px;
-}
-.col-12 {
-    width: calc(100% - 30px);
-    margin: 15px;
-}
-@media(min-width:768px){
-    // 四欄
-.col-md-3 {
-    width: calc(100% / 4 - 30px);
-    margin: 15px;
-}
-// 三欄
-.col-md-4 {
-    width: calc(100% / 3 - 30PX);
-    margin: 0PX 15PX 40PX 15PX;
-    //上右下左     
-}
-// 兩欄
-.col-md-6 {
-    width: calc(100% / 2 - 30px);
-    margin: 15px;
-}
-.col-md-8 {
-    width: calc(100% / 1.5 - 30px);
-    margin: 0px 15px 40px 15px;
-}
-.col-md-9 {
-    width: calc(100% / 1.333333 - 30px);
-    margin: 15px;
-}
-.col-md-12 {
-    width: calc(100% - 30px);
-    margin: 15px;
+// // 四欄
+// .col-3 {
+//     width: calc(100% / 4 - 30px);
+//     margin: 15px;
+// }
+
+// @for $i from 1 through 10 {
+//     .col-#{$i} {
+//         $num: calc(12/#{$i});
+//         width: calc(100% / #{$i} - 30px);
+//         margin: 0px 15px 40px 15px;
+//     }
+// }
+@for $i from 1 through 12 {
+    .col-#{$i}{
+        --num: calc(12 / #{$i});
+        width: calc(100% / var(--num) - 30px);
+        margin: 0px 15px 40px 15px;
+    }
 }
 
+@media (min-width:768px) {
+    @for $i from 1 through 12 {
+        .col-md-#{$i}{
+            --num: calc(12 / #{$i});
+            width: calc(100% / var(--num) - 30px);
+            margin: 0px 15px 40px 15px;
+        }
+    }
 }
+@media(min-width:1200px) {
+        @for $i from 1 through 12 {
+            .col-lg-#{$i}{
+                --num: calc(12 / #{$i});
+                width: calc(100% / var(--num) - 30px);
+                margin: 0px 15px 40px 15px;
+            }
 
-@media(min-width:1200px){
-    // 四欄
-.col-lg-3 {
-    width: calc(100% / 4 - 30px);
-    margin: 15px;
-}
-// 三欄
-.col-lg-4 {
-    width: calc(100% / 3 - 30PX);
-    margin: 0PX 15PX 40PX 15PX;
-    //上右下左     
-}
-// 兩欄
-.col-lg-6 {
-    width: calc(100% / 2 - 30px);
-    margin: 15px;
-}
-.col-lg-8 {
-    width: calc(100% / 1.5 - 30px);
-    margin: 0px 15px 40px 15px;
-}
-.col-lg-9 {
-    width: calc(100% / 1.333333 - 30px);
-    margin: 15px;
-}
-.col-lg-12 {
-    width: calc(100% - 30px);
-    margin: 15px;
-}
+        }
+    }
+// // 三欄
+// .col-4 {
+//     width: calc(100% / 3 - 30PX);
+//     margin: 0PX 15PX 40PX 15PX;
+//     //上右下左     
+// }
 
-}
+// // 兩欄
+// .col-6 {
+//     width: calc(100% / 2 - 30px);
+//     margin: 15px;
+// }
+
+// .col-8 {
+//     width: calc(100% / 1.5 - 30px);
+//     margin: 0px 15px 40px 15px;
+// }
+
+// .col-9 {
+//     width: calc(100% / 1.333333 - 30px);
+//     margin: 15px;
+// }
+
+// .col-12 {
+//     width: calc(100% - 30px);
+//     margin: 15px;
+// }
+
 
 .title a {
     color: black;
@@ -342,7 +319,7 @@ footer p {
     }
 
     // .active
-    header>.container>nav.active{
+    header>.container>nav.active {
         display: block;
     }
 
@@ -354,8 +331,9 @@ footer p {
         text-align: center;
         width: 100%;
     }
+
     header>.container>nav>ul>li>a {
-       display: block;
+        display: block;
     }
 
     .overflow-hidden {
@@ -372,3 +350,18 @@ footer p {
 }
 
 // 超過768執行 end
+
+// $i index
+// for迴圈
+// form through 從1開始到3
+@for $i from 1 through 10 {
+    .fz-#{$i} {
+        font-size: $i * 1em;
+    }
+}
+
+@for $var from 1 through 6 {
+    .mb-#{$var} {
+        margin-bottom: $var * 1em;
+    }
+}
