@@ -301,16 +301,16 @@ footer p {
     // margin-left: -25px;
 }
 
-
 .flex-space-between{
     justify-content: space-between;
 }
 
 // 小於767執行 start
 @media(max-width:767px) {
-    h1 {
-        // width: 85%;
-    }
+
+    // h1 {
+    //     width: 85%;
+    // }
 
 // icon-menu
     .icon-menu {
@@ -327,21 +327,26 @@ footer p {
         top: 60px;
         background-color: rgb(8, 10, 9);
         // display: none;
+        // 需要蓋板的話打開
+        // position: fixed;
+        // top: 0;
+        // height: 100vh;
+        // z-index: 999;
     }
 // nav動畫 start
     nav{
-        left: -100vw;
+        left: 0;
+        // 等到二層選單時才使用
+        // left: -100vw;
         // viewport width
         transition: all .3s;
-        opacity: 0;
+        // opacity: 0;
     }
     .icon-menu:hover+nav{
         left: 0;
-        opacity: 1;
-        
+        // opacity: 1;
     }
 // nav動畫 end
-    
 // .active
     header>.container nav.active {
         display: block;
@@ -360,16 +365,28 @@ footer p {
     header>.container nav ul li a {
         display: block;
     }
+    // 二層選單
+    .submenu{
+        background-color: $primaty-color;
+    }
+    .submenu>li{
+        line-height: 60px;
+        border-bottom: 1px solid #052627;
+    }
 
+    .submenu>li>a{
+        color:#052627;
+        display: block;
+    }
 }
-
 // max-width 小於767執行 end
+
 // 超過768執行 start
-// @media(min-width:768px) {
-//     .icon-menu {
-//         display: none;
-//     }
-// }
+@media(min-width:768px) {
+    .icon-menu {
+        display: none;
+    }
+}
 // 超過768執行 end
 
 // $i index

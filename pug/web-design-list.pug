@@ -1,92 +1,93 @@
 doctype html
-html(lang='zh-Hant')
+html(lang='en')
   head
     meta(charset='UTF-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    title 平面設計作品|Yuling's Porfolio
+    title 網頁設計作品|Yuling's Porfolio 
     link(rel='stylesheet', href='public/css/style.css')
   body
-    // header start
-    // header>.container>h1>a[href="index.html"]{Yu ling's Portfolio}+nav>ul>li*4>a[href="#"]{文字}
-    header 
+    header
       .container
         .row.flex-space-between
-          h1
-            a(href='index.html') Yuling's Portfolio
-          a.icon-menu(href="#") menu 
-          nav
-            ul
-              li
-                a(href='about-us.html') 關於我
-              li
-                a(href='design-list.html') 平面作品
-              li
-                a(href='web-design-list.html') 網頁設計作品
-              li
-                a(href='contact-us.html') 聯絡我
-    // header end
-    // content start
+            h1
+                a(href='index.html') Yuling's Portfolio
+            a.icon-menu(href="#") menu 
+            nav
+                ul
+                    li
+                        a(href='about-us.html') 關於我
+                    li
+                        a(href='#') 平面設計
+                        ul.submenu 
+                            li 
+                                a(href="design-list.html") 品牌設計
+                            li 
+                                a(href="design-list.html")  包裝設計
+                    li
+                        a(href='#') 網頁設計作品
+                        ul.submenu 
+                            li 
+                                a(href="web-design-list.html") 品牌設計
+                            li 
+                                a(href="web-design-list.html")  包裝設計
+                    li
+                        a(href='contact-us.html') 聯絡我
     .container
       .row
         ul.breadcrumb.col-12
-          li
-            a(href='index.html') 首頁
-          | &nbsp;>&nbsp;
-          li 平面作品
-        aside.col-12.col-md-3.col-lg-2
-          // ul>li*4>a.btn-primary{分類$$}
+            li
+                a(href='index.html') 首頁
+                &nbsp;>;&nbsp;
+            li 網頁設計作品
+        aside.col-3
           ul
             li
               a.btn-primary(href='') 全部 
             li
-              a.btn-primary(href='') 品牌設計
+              a.btn-primary(href='') item 1
             li
-              a.btn-primary(href='') 包裝設計
+              a.btn-primary(href='') item 2
             li
-              a.btn-primary(href='') 插畫設計
-        main.col-12.col-md-9.col-lg-10
+              a.btn-primary(href='') item 3
+        main.col-9
           .row
-            // work start
-            .col-12.col-md-4.text-center
+            .col-4.text-center
               a.img-wrap(href='#')
                 .img-overlay
                   img.img-fluid.img-rounded(src='https://picsum.photos/300/300', alt='')
                 span.icon-new NEW
               a.text-primary(href='') 作品標題1
-            // work end
-            .col-12.col-md-4.text-center
+            .col-4.text-center
               a.img-wrap(href='#')
                 .img-overlay
                   img.img-fluid.img-rounded(src='https://picsum.photos/300/300', alt='')
                 span.icon-new NEW
               a.text-primary(href='') 作品標題2
-            .col-12.col-md-4.text-center
+            .col-4.text-center
               a.img-wrap(href='#')
                 .img-overlay
                   img.img-fluid.img-rounded(src='https://picsum.photos/300/300', alt='')
-                span.icon-new NEW
               a.text-primary(href='') 作品標題3
-            .col-12.col-md-4.text-center
+            .col-4.text-center
               a.img-wrap(href='#')
                 .img-overlay
                   img.img-fluid.img-rounded(src='https://picsum.photos/300/300', alt='')
               a.text-primary(href='') 作品標題4
-            .col-12.col-md-4.text-center
+            .col-4.text-center
               a.img-wrap(href='#')
                 .img-overlay
                   img.img-fluid.img-rounded(src='https://picsum.photos/300/300', alt='')
               a.text-primary(href='') 作品標題5
-            .col-12.col-md-4.text-center
+            .col-4.text-center
               a.img-warp(href='#')
                 .img-overlay
                   img.img-fluid.img-rounded(src='https://picsum.photos/300/300', alt='')
               a.text-primary(href='') 作品標題6
-    // content end
     footer
       .container
         .row.text-center
-          dl.col-12.col-md-3
+          dl.col-3
             dt 標題01
             dd
               a(href='#') 項目01
@@ -96,7 +97,7 @@ html(lang='zh-Hant')
               a(href='#') 項目03
             dd
               a(href='#') 項目04
-          dl.col-12.col-md-3
+          dl.col-3
             dt 標題02
             dd
               a(href='#') 項目01
@@ -106,7 +107,7 @@ html(lang='zh-Hant')
               a(href='#') 項目03
             dd
               a(href='#') 項目04
-          dl.col-12.col-md-3
+          dl.col-3
             dt 標題03
             dd
               a(href='#') 項目01
@@ -116,7 +117,7 @@ html(lang='zh-Hant')
               a(href='#') 項目03
             dd
               a(href='#') 項目04
-          dl.col-12.col-md-3
+          dl.col-3
             dt 標題04
             dd
               a(href='#') 項目01
@@ -126,5 +127,4 @@ html(lang='zh-Hant')
               a(href='#') 項目03
             dd
               a(href='#') 項目04
-        // <p class="copyright text-center">copyright</p>
         p.copyright.text-center 本網站只供學習使用，不用於商業用途

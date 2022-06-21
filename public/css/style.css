@@ -433,14 +433,12 @@ footer p {
   }
 
   nav {
-    left: -100vw;
+    left: 0;
     transition: all 0.3s;
-    opacity: 0;
   }
 
   .icon-menu:hover + nav {
     left: 0;
-    opacity: 1;
   }
 
   header > .container nav.active {
@@ -459,6 +457,25 @@ footer p {
 
   header > .container nav ul li a {
     display: block;
+  }
+
+  .submenu {
+    background-color: #a1afbe;
+  }
+
+  .submenu > li {
+    line-height: 60px;
+    border-bottom: 1px solid #052627;
+  }
+
+  .submenu > li > a {
+    color: #052627;
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  .icon-menu {
+    display: none;
   }
 }
 .fz-1 {
