@@ -9,21 +9,22 @@ html(lang='zh-Hant')
   body
     // header start
     // header>.container>h1>a[href="index.html"]{Yu ling's Portfolio}+nav>ul>li*4>a[href="#"]{文字}
-    header.overflow-hidden 
+    header 
       .container
-        a.icon-menu(href="#") menu 
-        h1
-          a(href='index.html') Yu ling's Portfolio
-        nav
-          ul
-            li
-              a(href='about-us.html') 關於我
-            li
-              a(href='design-list.html') 平面作品
-            li
-              a(href='web-design-list.html') 網頁設計作品
-            li
-              a(href='contact-us.html') 聯絡我
+        .row.flex-space-between
+          h1
+            a(href='index.html') Yu ling's Portfolio
+          a.icon-menu(href="#") menu 
+          nav
+            ul
+              li
+                a(href='about-us.html') 關於我
+              li
+                a(href='design-list.html') 平面作品
+              li
+                a(href='web-design-list.html') 網頁設計作品
+              li
+                a(href='contact-us.html') 聯絡我
     // header end
     // content start
     .container

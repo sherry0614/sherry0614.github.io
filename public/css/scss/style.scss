@@ -32,24 +32,24 @@ header {
     background-color: #052627;
 }
 
-header>.container>h1 {
+header>.container h1 {
     padding-top: 20px;
 }
 
-header>.container>h1>a {
+header>.container h1>a {
     color: $primaty-color;
 }
 
-header>.container>nav>ul {
+header>.container nav>ul {
     display: flex;
     // justify-content: space-between;
 }
 
-header>.container>nav>ul>li {
+header>.container nav>ul>li {
     margin-right: 30px;
 }
 
-header>.container>nav>ul>li>a {
+header>.container nav>ul>li>a {
     line-height: 60px;
     color: $primaty-color;
     font-size: 1.2em;
@@ -302,17 +302,18 @@ footer p {
 }
 
 
+.flex-space-between{
+    justify-content: space-between;
+}
+
 // 小於767執行 start
 @media(max-width:767px) {
     h1 {
         // width: 85%;
-        float: left;
     }
 
-    // icon-menu
-
+// icon-menu
     .icon-menu {
-        float: right;
         width: 15%;
         display: block;
         color: #a1afbe;
@@ -320,43 +321,55 @@ footer p {
         text-align: center;
     }
 
-    header>.container>nav {
+    header>.container nav {
         width: 100%;
-        float: left;
-        display: none;
+        position: absolute;
+        top: 60px;
+        background-color: rgb(8, 10, 9);
+        // display: none;
     }
-
-    // .active
-    header>.container>nav.active {
+// nav動畫 start
+    nav{
+        left: -100vw;
+        // viewport width
+        transition: all .3s;
+        opacity: 0;
+    }
+    .icon-menu:hover+nav{
+        left: 0;
+        opacity: 1;
+        
+    }
+// nav動畫 end
+    
+// .active
+    header>.container nav.active {
         display: block;
     }
 
-    header>.container>nav>ul {
+    header>.container nav ul {
         display: block;
     }
 
-    header>.container>nav>ul>li {
+    header>.container nav>ul>li {
         text-align: center;
         width: 100%;
+        border-bottom: 1px solid $primaty-color
     }
 
-    header>.container>nav>ul>li>a {
+    header>.container nav ul li a {
         display: block;
     }
 
-    .overflow-hidden {
-        overflow: hidden;
-    }
 }
 
 // max-width 小於767執行 end
 // 超過768執行 start
-@media(min-width:768px) {
-    .icon-menu {
-        display: none;
-    }
-}
-
+// @media(min-width:768px) {
+//     .icon-menu {
+//         display: none;
+//     }
+// }
 // 超過768執行 end
 
 // $i index
