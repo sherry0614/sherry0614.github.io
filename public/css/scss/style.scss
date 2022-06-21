@@ -66,6 +66,16 @@ header>.container nav>ul>li>a {
     header>.container nav>ul>li:hover .submenu{
         display: block;
     }
+    header{
+        position: relative;
+    }
+    header h1{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #cee2e7;
+    }
+
     .submenu{
         position: absolute;
         background-color: $primaty-color;
