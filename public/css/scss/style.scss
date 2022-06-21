@@ -56,6 +56,36 @@ header>.container nav>ul>li>a {
     letter-spacing: 2px;
 }
 
+@media(min-width:768px){
+    header>.container nav{
+        width: 100%;
+    }
+    header>.container nav>ul>li{
+        position: relative;
+    }
+    header>.container nav>ul>li:hover .submenu{
+        display: block;
+    }
+    .submenu{
+        position: absolute;
+        background-color: $primaty-color;
+        width: 160%;
+        left: 0px;
+        top: 60p;
+        display: none;
+    }
+    
+    .submenu>li>a{
+        display: block;
+        color: #052627;
+        padding: 10px;
+    }
+    .submenu>li>a:hover{
+        color: #cee2e7;
+        background-color: #0c6669;
+    }
+}
+// min-width 768 end
 // =========================
 //         內容區塊 
 // =========================
@@ -352,7 +382,7 @@ footer p {
         display: block;
     }
 
-    header>.container nav ul {
+    header>.container nav>ul {
         display: block;
     }
 
@@ -362,12 +392,16 @@ footer p {
         border-bottom: 1px solid $primaty-color
     }
 
-    header>.container nav ul li a {
+    header>.container nav>ul>li>a {
         display: block;
     }
     // 二層選單
     .submenu{
+        display: none;
         background-color: $primaty-color;
+    }
+    header>.container nav>ul>li:hover .submenu{
+        display: block;
     }
     .submenu>li{
         line-height: 60px;
@@ -376,7 +410,7 @@ footer p {
 
     .submenu>li>a{
         color:#052627;
-        display: block;
+        // display: block;
     }
 }
 // max-width 小於767執行 end
