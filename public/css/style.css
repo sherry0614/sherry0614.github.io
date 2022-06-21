@@ -38,10 +38,6 @@ header > .container nav > ul {
   display: flex;
 }
 
-header > .container nav > ul > li {
-  margin-right: 30px;
-}
-
 header > .container nav > ul > li > a {
   line-height: 60px;
   color: #a1afbe;
@@ -66,11 +62,30 @@ header > .container nav > ul > li > a {
     position: relative;
   }
 
-  header h1 {
+  header > .container h1 {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #cee2e7;
+    line-height: 60px;
+    padding-top: 0px;
+  }
+
+  header > .container nav > ul > li > a {
+    font-size: 1em;
+  }
+
+  header nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  header > .container nav > ul > li {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  header > .container nav > ul > li:nth-child(2) {
+    margin-right: 250px;
   }
 
   .submenu {

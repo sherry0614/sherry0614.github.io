@@ -45,9 +45,9 @@ header>.container nav>ul {
     // justify-content: space-between;
 }
 
-header>.container nav>ul>li {
-    margin-right: 30px;
-}
+// header>.container nav>ul>li {
+//     margin-right: 30px;
+// }置中時不需要設定
 
 header>.container nav>ul>li>a {
     line-height: 60px;
@@ -66,16 +66,33 @@ header>.container nav>ul>li>a {
     header>.container nav>ul>li:hover .submenu{
         display: block;
     }
+    // logo置中 start
     header{
         position: relative;
     }
-    header h1{
+    header>.container h1{
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        background-color: #cee2e7;
+        line-height: 60px;
+        padding-top: 0px;
+        }
+header>.container nav>ul>li>a {
+    font-size: 1em;
+}
+    header nav{
+        display: flex;
+        justify-content: center;     
     }
+    header>.container nav>ul>li{
+        margin-left: 10px;
+        margin-right: 10px;
+}
+header>.container nav>ul>li:nth-child(2){
+    margin-right: 250px;
+}
 
+// logo置中end
     .submenu{
         position: absolute;
         background-color: $primaty-color;
